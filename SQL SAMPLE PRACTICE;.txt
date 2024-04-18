@@ -1,0 +1,51 @@
+use logicFirst;
+CREATE TABLE cars(
+		ID INT PRIMARY KEY ,
+        name VARCHAR(10),
+        Numwheels INT,
+        Numdoors INT,
+        type VARCHAR(10)
+
+);
+DESCRIBE CARS;
+
+INSERT INTO CARS VALUES(1,'FordFocus',4,4,'Sedan');
+INSERT INTO CARS VALUES(2,'Tesla Roadster',4,2,'Sports');
+INSERT INTO CARS VALUES(3,'Kawakasi Ninja',2,0,'Motorcycle');
+INSERT INTO CARS VALUES(4,'McLaren Formula 1',4,0,'race');
+INSERT INTO CARS VALUES(5,'VolksWagan',4,4,'Sedan');
+INSERT INTO CARS VALUES(6,'MaruthiSuzuki',4,4,'Sedan');
+INSERT INTO CARS VALUES(7,'Toyoto',4,4,'Sedan');
+INSERT INTO CARS VALUES(8,'TATA',4,4,'Sedan');
+INSERT INTO CARS VALUES(9,'Mortin Garges',4,4,'Sedan');
+INSERT INTO CARS VALUES(10,'KIA',4,4,'Sedan');
+
+ALTER TABLE CARS ADD YEAR INT;
+
+INSERT INTO CARS VALUES(1,'FordFocus',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(2,'Tesla Roadster',4,2,'Sports',2020);
+INSERT INTO CARS VALUES(3,'Kawakasi Ninja',2,0,'Motorcycle',2020);
+INSERT INTO CARS VALUES(4,'McLaren Formula 1',4,0,'race',2020);
+INSERT INTO CARS VALUES(5,'VolksWagan',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(6,'MaruthiSuzuki',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(7,'Toyoto',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(8,'TATA',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(9,'Mortin Garges',4,4,'Sedan',2020);
+INSERT INTO CARS VALUES(10,'KIA',4,4,'Sedan',2020);
+
+SELECT * FROM CARS;
+
+INSERT INTO  CARS(YEAR)  VALUES(2020) ; 
+UPDATE CARS SET YEAR=2019
+WHERE ID=1;
+
+UPDATE CARS SET YEAR=2020
+WHERE ID=2;
+UPDATE CARS SET YEAR=2020
+WHERE ID=3;
+
+
+
+
+
+
